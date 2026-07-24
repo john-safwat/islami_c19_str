@@ -88,8 +88,8 @@ class QuranTab extends StatelessWidget {
                   separatorBuilder: (context, index) => Divider(
                     color: Colors.white,
                     thickness: 1,
-                    indent: 30,
-                    endIndent: 30,
+                    indent: 40,
+                    endIndent: 40,
                   ),
                   itemCount: 114,
                   itemBuilder: (context, index) {
