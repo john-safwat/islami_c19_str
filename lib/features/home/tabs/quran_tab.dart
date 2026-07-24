@@ -10,7 +10,7 @@ class QuranTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
+     return Stack(
       children: [
         Image.asset(
           "assets/images/quran_bg.png",
@@ -88,8 +88,8 @@ class QuranTab extends StatelessWidget {
                   separatorBuilder: (context, index) => Divider(
                     color: Colors.white,
                     thickness: 1,
-                    indent: 45,
-                    endIndent: 45,
+                    indent: 20,
+                    endIndent: 20,
                   ),
                   itemCount: 114,
                   itemBuilder: (context, index) {
