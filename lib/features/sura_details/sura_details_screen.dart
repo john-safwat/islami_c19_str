@@ -68,8 +68,6 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
       suraContent = "$suraContent ${suraVerses[i].trim()} [${i+1}]";
     }
     suraContent!.trim();
-    setState(() {
-
-    });
+    setState(() {});
   }
 }
