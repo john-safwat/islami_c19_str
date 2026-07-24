@@ -10,7 +10,7 @@ class QuranTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
+     return Stack(
       children: [
         Image.asset(
           "assets/images/quran_bg.png",
