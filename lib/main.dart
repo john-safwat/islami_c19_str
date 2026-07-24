@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
         HomeScreen.routeName: (_) => HomeScreen(),
         OnabordingScreen.routeName: (_) => OnabordingScreen(),
         SuraDetailsScreen.routeName : (context) {
-          var suraItemModel = ModalRoute.of(context)?.settings.arguments as SuraItemModel;
-          return SuraDetailsScreen(suraItemModel: suraItemModel);
+          var sura = ModalRoute.of(context)?.settings.arguments as SuraItemModel;
+          return SuraDetailsScreen(suraItemModel: sura);
         }
       },
     );
