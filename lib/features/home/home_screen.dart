@@ -46,22 +46,22 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           BottomNavigationBarItem(
             icon: SvgPicture.asset(
-              "assets/svg_images/ic_sebha.svg",
+              "assets/svg_images/ic_ahadeth.svg",
               color: _selectedIndex == 1
                   ? Colors.white
                   : AppColors.secondaryColor,
             ),
-            label: 'Sebha',
+            label: 'Ahadeth',
             backgroundColor: AppColors.primaryColor,
           ),
           BottomNavigationBarItem(
             icon: SvgPicture.asset(
-              "assets/svg_images/ic_ahadeth.svg",
+              "assets/svg_images/ic_sebha.svg",
               color: _selectedIndex == 2
                   ? Colors.white
                   : AppColors.secondaryColor,
             ),
-            label: 'Ahadeth',
+            label: 'Sebha',
             backgroundColor: AppColors.primaryColor,
           ),
           BottomNavigationBarItem(
@@ -99,8 +99,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   List<Widget> tabs = [
     QuranTab(),
-    SebhaTab(),
     AhadethTab(),
+    SebhaTab(),
     RadioTab(),
     TimeTab(),
   ];

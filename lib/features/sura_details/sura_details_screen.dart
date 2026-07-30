@@ -18,8 +18,14 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
   String? suraContent;
 
   @override
-  Widget build(BuildContext context) {
+  void initState() {
+    super.initState();
     loadSuraContent();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.secondaryColor,
@@ -68,6 +74,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
       suraContent = "$suraContent ${suraVerses[i].trim()} [${i+1}]";
     }
     suraContent!.trim();
+    print(suraContent);
     setState(() {});
   }
 }
